@@ -1,0 +1,152 @@
+// Themer
+
+.c-music {
+    background: _color(white);
+    display: none;
+    margin: 4em auto 3em;
+    position: relative;
+    width: 95%;
+    z-index: 500;
+  
+    &.in-view {
+      display: block;
+    }
+  
+    @include breakpoint(lg) {
+      left: inherit;
+      margin: inherit;
+      position: absolute;
+      right: 20%;
+      top: 8%;
+      width: 310px;
+    }
+  
+    &__visualizer {
+      background: $color__browso--lavender url('../assets/pixels-dark.svg') top left;
+      display: flex;
+      height: 60px;
+      margin: 0 0 1em;
+    }
+  
+    &__bar {
+      width: 11px;
+      height: 1px;
+      position: relative;
+      background: _color(white);
+  
+      &:before {
+        content: "";
+        height: 2px;
+        width: 11px;
+        background: _color(white);
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+    }
+  
+    iframe {
+      height: 1px;
+      left: -5000px;
+      opacity: 0;
+      position: fixed;
+      top: -5000px;
+      visibility: hidden;
+      width: 1px;
+    }
+  
+    .c-viewer {
+      pointer-events: all;
+    }
+  
+  }
+  
+  .c-radio {
+    padding: 0 16px 20px;
+  
+    &__title {
+      color: $color__coastal--indigo-600;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: $font-headings;
+    }
+  
+    &__text {
+      animation: marquee 30s linear infinite;
+      color: $color__coastal--indigo-600;
+      font-size: 14px !important;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+  
+    &__outlink {
+      color: $color__coastal--indigo-600;
+      font-size: 14px !important;
+      letter-spacing: 1px;
+    }
+  
+    a, span {
+      font-size: 14px;
+    }
+  
+    &__marquee {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+  
+    &__link {
+      margin-left: -5px;
+      position: relative;
+      z-index: 10;
+    }
+  
+    &__play {
+      // height: 37px;
+      position: relative;
+      z-index: 5;
+      width: 45px;
+    }
+  
+    &__prev, &__next {
+      width: 45px;
+    }
+  
+    span {
+      display: inline-flex;
+    }
+  
+    &__next {
+      position: relative;
+      z-index: 15;
+    }
+  
+    .c-btn {
+      text-align: center;
+      font-size: 12px;
+      line-height: 150%;
+  
+      &:active {
+        background: darken(_color(white), 5.5%);
+      }
+    }
+  
+    .c-btn + .c-btn {
+      margin-left: -5px;
+      margin-right: 0;
+    }
+  
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(30%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

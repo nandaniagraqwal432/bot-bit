@@ -1,0 +1,32 @@
+// Components :: Footer
+
+.c-footer {
+    position: relative;
+    z-index: 100;
+    padding: 3em 0;
+    text-align: center;
+  
+    &__text {
+      font-size: 13px;
+      color: $color__coastal--indigo-600;
+      text-align: center;
+      background: _color(white);
+      display: inline-block;
+    }
+  
+    &__link {
+      color: $color__coastal--indigo-600;
+      text-decoration: line-through;
+      transition: all 0.2s ease-in-out;
+  
+      &:hover {
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+  
+    @media print {
+      display: none;
+    }
+  }
+  

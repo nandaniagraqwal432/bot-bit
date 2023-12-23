@@ -1,0 +1,319 @@
+// Theme :: Alpine Nights
+
+.s-home.th-red-dawn {
+
+    $boxshadow__white--inset: none;
+    $boxshadow__white: none;
+    background: $color__rd--crimson url('../assets/pixels-dark.svg') top left;
+  
+    .c-nav {
+  
+      &__content {
+        background: $color__rd--red;
+        border-color: $color__rd--crimson;
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 15%), 0 8px 0 0 rgba(0,0,0,0.2);
+      }
+    }
+  
+    p, li, button {
+      text-shadow: 0 2px 0 $color__rd--crimson;
+    }
+  
+    .c-nav-list {
+  
+      &__svg {
+  
+        svg path {
+          fill: $color__rd--pink;
+        }
+      }
+  
+      &__item {
+  
+        &--first {
+          border-left: 1px solid lighten($color__rd--red, 15%);
+          box-shadow: inset 1px 0 0 0 $color__rd--crimson, 1px 0 0 0 $color__rd--crimson !important;
+          // inset 1px 0 0 0 #000,1px 0 0 0 #640A0E !important
+        }
+  
+        &--inner {
+          border-right: 1px solid lighten($color__rd--red, 15%);
+          box-shadow: 1px 0 0 0 $color__rd--crimson;
+        }
+      }
+  
+      &__clock {
+        color: $color__rd--pink;
+      }
+    }
+  
+    .c-viewer {
+      border-color: #3a0d0f;
+      box-shadow: inset 1px 0 0 0 lighten($color__rd--red, 15%), 8px 8px 0 0 rgba(0, 0, 0, 0.2);
+  
+      &__close-button {
+        background: url("/assets/close-icon-white.svg") center center no-repeat !important;
+      }
+  
+      &__content {
+        background: $color__rd--red;
+        box-shadow: inset 1px 0 0 0 lighten($color__rd--red, 15%);
+      }
+  
+      &__desc-text {
+        color: _color(white);
+        text-shadow: 0 2px 0 $color__rd--crimson;
+      }
+  
+      &__address-bar {
+        background: $color__rd--red;
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 15%);
+  
+        i {
+          background: $color__rd--gold;
+          box-shadow: 0 1px 0 0 $color__rd--crimson;
+        }
+  
+        &:after, &:before {
+          background: $color__rd--red;
+          border-color: $color__rd--gold;
+          box-shadow: 1px 1px 0 0 $color__rd--crimson;
+        }
+      }
+  
+      &__title {
+        color: _color(white);
+  
+      }
+  
+      &__list {
+        // box-shadow: 1px 1px 0 0 $color__rd--crimson;
+      }
+  
+      &__list-item {
+        border-color: $color__rd--crimson;
+        color: $color__rd--pink;
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 10%);
+  
+        &:last-child {
+          border-bottom-color: $color__rd--crimson;
+        }
+  
+        span {
+          color: _color(white);
+        }
+      }
+  
+    }
+  
+    .c-cookies {
+  
+      &__content {
+        background: $color__rd--red;
+        box-shadow: inset 1px 0 0 0 lighten($color__rd--red, 15%);
+      }
+      &__text, &__link {
+        color: _color(white);
+      }
+    }
+  
+    .c-card {
+  
+      background: $color__rd--red;
+      box-shadow: 6px 6px 0 0 $color__rd--crimson, inset 1px 1px 0 0 lighten($color__rd--red, 15%), inset -1px -1px 0 0 $color__rd--gold;
+  
+      &:hover {
+        box-shadow: 6px 6px 0 0 $color__rd--crimson, inset 1px 1px 0 0 lighten($color__rd--red, 15%), inset -1px -1px 0 0 $color__rd--gold;
+      }
+  
+      &__wrapper {
+        background: url(../assets/pixels-dark.svg) top left;
+      }
+  
+      &--green {
+        border-color: transparent;
+      }
+  
+      &--red {
+        border-color: transparent;
+      }
+  
+      &--blue {
+        border-color: transparent;
+      }
+  
+      &--indigo {
+        border-color: transparent;
+      }
+  
+      &--gold {
+        border-color: transparent;
+      }
+  
+      &--pink {
+        border-color: transparent;
+      }
+  
+      &__button {
+        border-color: $color__rd--crimson;
+        background: $color__rd--red;
+        color: _color(white);
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 10%), 2px 2px 0 0 $color__rd--crimson;
+      }
+  
+      dt {
+        color: _color(white);
+        text-shadow: 0 2px 0 $color__rd--crimson;
+      }
+      dd {
+        color: $color__rd--pink;
+      }
+  
+      &__icon {
+  
+        svg path {
+          fill: $color__rd--pink;
+        }
+  
+        &:after {
+          display: none !important;
+        }
+      }
+  
+    }
+  
+    .c-flourish {
+      opacity: 0.04 !important;
+    }
+  
+    .c-footer {
+      &__text, &__link {
+        color: _color(white);
+        opacity: 1;
+      }
+      &__text {
+        background: $color__rd--red;
+      }
+    }
+  
+    .c-themer {
+      background: $color__rd--red;
+  
+      &__preview {
+        background: $color__rd--crimson url('../assets/pixels-dark.svg') top left;
+      }
+  
+      &__preview-inner {
+        background: $color__rd--red;
+        border: 1px solid $color__rd--crimson;
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 15%), 3px 3px 0 0 rgba(0,0,0,0.2);
+      }
+  
+      &__white-noise {
+        background: url(../assets/pixels-dark.svg) top left;
+      }
+  
+      &__blackboard {
+        background: $color__rd--red;
+        border: 1px solid transparent;
+        // box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+        box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2), inset 1px 1px 0 0 lighten($color__rd--red, 15%), inset -1px -1px 0 0 $color__rd--gold;
+      }
+  
+      &__icon {
+        svg path {
+          fill: $color__rd--pink;
+        }
+      }
+  
+      &__button {
+        background: $color__rd--red;
+        border: none;
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 15%), inset -1px -1px 0 0 $color__rd--crimson;
+        color: _color(white);
+  
+        &--active {
+          border: none;
+          background: darken($color__rd--red, 3%);
+          box-shadow: inset -1px -1px 0 0 lighten($color__rd--red, 15%), inset 1px 1px 0 0 $color__rd--crimson;
+        }
+  
+        &--close {
+          border: 1px solid _color(white);
+          box-shadow: 3px 3px 0 0 _color(white);
+        }
+      }
+    }
+  
+    .c-btn {
+      background: $color__rd--red;
+      color: _color(white);
+      border: 1px solid $color__rd--crimson;
+      box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 10%), 3px 3px 0 0 $color__rd--crimson;
+    }
+  
+    .c-forward {
+      &__subject {
+        background: $color__rd--red;
+        border-bottom: 1px solid $color__rd--crimson;
+        border-top: 1px solid $color__rd--crimson;
+        color: _color(white);
+        box-shadow: inset 1px 1px 0 0 lighten($color__rd--red, 10%);
+      }
+  
+      &__message {
+        background: $color__rd--red;
+        box-shadow: inset 1px 0 0 0 lighten($color__rd--red, 10%);
+      }
+  
+      &__message-list-item {
+        color: _color(white);
+      }
+    }
+  
+    .c-loader {
+      background: $color__rd--red;
+  
+      &__boot {
+        background: $color__rd--red;
+        border: 1px solid $color__rd--gold;
+  
+        svg path {
+          fill: $color__rd--pink;
+        }
+      }
+  
+      &__bar {
+        border: 1px solid $color__rd--gold;
+  
+        span {
+          background:$color__rd--gold;
+        }
+      }
+  
+      &__message {
+        color: _color(white);
+      }
+  
+      &__disclaimer {
+        color: $color__rd--pink;
+      }
+    }
+  
+    .c-info {
+  
+      &__content {
+        background: $color__rd--red;
+        box-shadow: inset 1px 0 0 0 lighten($color__rd--red, 10%);
+      }
+      &__title, &__text, &__link {
+        color: _color(white);
+      }
+    }
+  
+    .c-pong {
+      background: $color__rd--red;
+    }
+  
+  }
+  

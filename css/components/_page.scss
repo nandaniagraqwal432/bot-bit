@@ -1,0 +1,10 @@
+// Components :: Page
+
+.c-page {
+    overflow-x: hidden;
+    
+    @include breakpoint(lg) {
+      height: 100%;
+    }
+  }
+  

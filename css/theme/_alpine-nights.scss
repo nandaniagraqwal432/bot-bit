@@ -1,0 +1,338 @@
+// Theme :: Alpine Nights
+
+.s-home.th-alpine-nights {
+
+    $boxshadow__white--inset: none;
+    $boxshadow__white: none;
+    background: $color__dark--green url('../assets/pixels-dark.svg') top left;
+  
+    .c-nav {
+  
+      &__content {
+        background: $color-black;
+        border-color: _color(white);
+        box-shadow: 0 8px 0 0 rgba(0,0,0,0.2);
+      }
+    }
+  
+    .c-nav-list {
+  
+      &__svg {
+  
+        svg path {
+          fill: _color(white);
+        }
+      }
+  
+      &__item {
+  
+        &--first {
+          border-left: 1px solid _color(white);
+        }
+  
+        &--inner {
+          border-right: 1px solid _color(white);
+          box-shadow: none;
+        }
+      }
+  
+      &__clock {
+        color: _color(white);
+      }
+    }
+  
+    .c-viewer {
+      border-color: _color(white);
+  
+      &__close-button {
+        background: url("/assets/close-icon-white.svg") center center no-repeat !important;
+      }
+  
+      &__content {
+        background: $color-black;
+        box-shadow: none;
+      }
+  
+      &__desc-text {
+        color: _color(white);
+      }
+  
+      &__address-bar {
+        background: $color-black;
+        box-shadow: none;
+  
+        i {
+          background: _color(white);
+          box-shadow: none;
+        }
+  
+        &:after, &:before {
+          background: $color-black;
+          border-color: _color(white);
+          box-shadow: none;
+        }
+      }
+  
+      &__title {
+        color: _color(white);
+      }
+  
+      &__list-item {
+        border-color: _color(white);
+        color: $color__dark--green;
+        box-shadow: none;
+  
+        &:last-child {
+          border-bottom-color: _color(white);
+        }
+  
+        span {
+          color: _color(white);
+        }
+      }
+  
+    }
+  
+    .c-cookies {
+  
+      &__content {
+        background: $color-black;
+      }
+      &__text, &__link {
+        color: _color(white);
+      }
+    }
+  
+    .c-card {
+  
+      background: $color-black;
+      box-shadow: 6px 6px 0 0 $color-black;
+  
+      &:hover {
+        box-shadow: 6px 6px 0 0 $color-black;
+      }
+  
+      &__wrapper {
+        background: url(../assets/pixels.svg) top left;
+      }
+  
+      &--green {
+        border-color: $color__dark--green;
+      }
+  
+      &--red {
+        border-color: $color__dark--red;
+      }
+  
+      &--blue {
+        border-color: $color__dark--blue;
+      }
+  
+      &--indigo {
+        border-color: $color__dark--indigo;
+      }
+  
+      &--gold {
+        border-color: $color__dark--gold;
+      }
+  
+      &--pink {
+        border-color: $color__dark--pink;
+      }
+  
+      &__button {
+        border-color: _color(white);
+        background: $color-black;
+        color: _color(white);
+        box-shadow: 2px 2px 0 0 _color(white);
+      }
+  
+      dt {
+        color: _color(white);
+      }
+      dd {
+        color: $color__dark--grey;
+      }
+  
+      &__icon {
+  
+        &:after {
+          display: none !important;
+        }
+      }
+  
+    }
+  
+    .c-flourish {
+      opacity: 0.14 !important;
+    }
+  
+    .c-footer {
+      &__text, &__link {
+        color: _color(white);
+        opacity: 1;
+      }
+      &__text {
+        background: $color-black;
+      }
+    }
+  
+    .c-themer {
+      background: $color-black;
+  
+      &__preview {
+        background: $color__dark--green url('../assets/pixels-dark.svg') top left;
+      }
+  
+      &__preview-inner {
+        background: $color-black;
+        border-color: $color-black;
+      }
+  
+      &__white-noise {
+        background: url(../assets/pixels.svg) top left;
+      }
+  
+      &__blackboard {
+        background: $color-black;
+        border: 1px solid _color(white);
+        box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+      }
+  
+      &__icon {
+        svg path {
+          fill: $color__dark--green;
+        }
+      }
+  
+      &__button {
+        background: $color-black;
+        border: none;
+        color: _color(white);
+        box-shadow: inset 1px 1px 0 0 lighten($color-black, 15%), inset -1px -1px 0 0 lighten($color-black, 15%);
+  
+        &--active {
+          border: none;
+          box-shadow: none;
+          box-shadow: inset 1px 1px 0 0 $color__dark--green, inset -1px -1px 0 0 $color__dark--green;
+        }
+  
+        &--close {
+          border: 1px solid _color(white);
+          box-shadow: 3px 3px 0 0 _color(white);
+        }
+      }
+    }
+  
+    .c-btn {
+      background: $color-black;
+      border: 1px dotted _color(white);
+      color: _color(white);
+      border: 1px solid _color(white);
+      box-shadow: 3px 3px 0 0 _color(white);
+    }
+  
+    .c-forward {
+      &__subject {
+        background: $color-black;
+        border-bottom: 1px solid _color(white);
+        border-top: 1px solid _color(white);
+        color: _color(white);
+      }
+  
+      &__message {
+        background: $color-black;
+      }
+  
+      &__message-list-item {
+        color: _color(white);
+      }
+    }
+  
+    .c-loader {
+      background: $color-black;
+  
+      &__boot {
+        background: $color-black;
+        border: 1px solid _color(white);
+  
+        svg path {
+          fill: $color__dark--green;
+        }
+      }
+  
+      &__bar {
+        border: 1px solid _color(white);
+  
+        span {
+          background: _color(white);
+        }
+      }
+  
+      &__message {
+        color: _color(white);
+      }
+  
+      &__disclaimer {
+        color: _color(white);
+      }
+    }
+  
+    .c-info {
+  
+      &__content {
+        background: $color-black;
+      }
+      &__title, &__text, &__link {
+        color: _color(white);
+      }
+    }
+  
+    .c-pong {
+      background: $color-black;
+    }
+  
+    .c-music {
+      background: $color-black;
+  
+      &__visualizer {
+        background:  url('../assets/pixels.svg') top left;
+      }
+  
+      &__bar {
+        background: $color-black;
+      }
+    }
+  
+    .c-radio {
+  
+      &__title {
+        color: _color(white);
+      }
+      &__text {
+        color: _color(white);
+      }
+  
+      &__outlink {
+        color: _color(white);
+      }
+  
+      &__icon {
+        svg rect {
+          fill: _color(white);
+        }
+        svg path {
+          fill: _color(white);
+        }
+      }
+  
+      .c-btn {
+        &:active {
+          background: lighten($color-black, 5.5%);
+        }
+      }
+  
+    }
+  
+  }
+  

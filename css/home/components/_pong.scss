@@ -1,0 +1,44 @@
+// Home :: Components :: Pong
+
+.c-pong {
+    z-index: 500;
+    position: relative;
+    width: 95%;
+    display: none;
+    margin: 4em auto 3em;
+  
+    background: _color(white);
+  
+    &.in-view {
+      display: table;
+    }
+  
+    &__holder {
+      display: flex;
+    }
+  
+    &__button {
+      position: absolute;
+      left: 50%;
+      top: 54%;
+      transform: translate3d(-50%, -50%, 0);
+      pointer-events: none;
+      display: none;
+  
+      &--visible {
+        display: block;
+        pointer-events: all;
+      }
+    }
+  
+    @include breakpoint(lg) {
+      margin: inherit;
+      width: 400px;
+      // height: 733px;
+      left: inherit;
+      bottom: 15%;
+      right: 25%;
+      position: absolute;
+    }
+  }
+  

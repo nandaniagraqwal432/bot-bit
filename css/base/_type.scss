@@ -1,0 +1,28 @@
+// Base :: Type
+
+html, body {
+    height: 100%;
+    font-family: $font-body;
+  }
+  
+  body {
+    line-height: 1.4;
+    margin: 0;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6, dt {
+    font-family: $font-headings;
+    color: $font-color-title;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  
+  p, ul, li, a, dd, button {
+    font-family: $font-body;
+    color: $font-color-body;
+    font-size: 1em;
+  }
+  

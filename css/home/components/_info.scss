@@ -1,0 +1,42 @@
+// Home :: Components :: Info
+
+.c-info {
+    z-index: 500;
+    position: relative;
+    width: 95%;
+    display: none;
+    margin: 4em auto 3em;
+  
+    &.in-view {
+      display: block;
+    }
+  
+    @include breakpoint(lg) {
+      margin: inherit;
+      width: 400px;
+      left: inherit;
+      top: 30%;
+      right: 50%;
+      position: absolute;
+    }
+  
+    &__content {
+      background: _color(white);
+      padding: 2em 1em 1.5em;
+    }
+  
+    &__title, &__text, &__link {
+      letter-spacing: 1.5px;
+      color: $color__coastal--indigo-600;
+    }
+  
+    &__text {
+      line-height: 1.6;
+    }
+  
+    &__link {
+      text-decoration: underline;
+    }
+  
+  }
+  

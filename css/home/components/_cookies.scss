@@ -1,0 +1,43 @@
+// Home :: Components :: Info
+
+.c-cookies {
+    z-index: 1000;
+    position: relative;
+    width: 95%;
+    display: none;
+    margin: 4em auto 3em;
+  
+    &.in-view {
+      display: block;
+    }
+  
+    @include breakpoint(lg) {
+      margin: inherit;
+      width: 350px;
+      left: inherit;
+      top: 80%;
+      left: 3%;
+      position: absolute;
+    }
+  
+    &__content {
+      background: _color(white);
+      padding: 1em;
+    }
+  
+    &__title, &__text, &__link {
+      letter-spacing: 1.2px;
+      color: $color__coastal--indigo-600;
+    }
+  
+    &__text {
+      line-height: 1.3;
+      font-size: 14px;
+    }
+  
+    &__link {
+      text-decoration: underline;
+    }
+  
+  }
+  

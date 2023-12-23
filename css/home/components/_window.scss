@@ -1,0 +1,15 @@
+// Home :: Components :: Window
+
+.c-window {
+    // opacity: 0;
+    z-index: 1000;
+    position: relative;
+  
+    .o-container {
+  
+      @include breakpoint(lg) {
+        max-width:  1280px;
+      }
+    }
+  }
+  

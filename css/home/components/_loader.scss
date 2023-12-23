@@ -1,0 +1,68 @@
+// Home :: Components :: loader
+
+.c-loader {
+
+    background: _color(white);
+    margin: 1.5em auto 3em;
+    position: relative;
+    width: 90%;
+  
+    @include breakpoint(lg) {
+      margin: inherit;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate3d(-50%,-70%,0);
+      width: 400px;
+     }
+  
+    &__boot {
+      margin: 1.3em 1.3em 0;
+      padding: 2.5em 1em;
+      text-align: center;
+      background: _color(white);
+      border: 1px solid $color__coastal--indigo-600;
+      font-weight: 500;
+  
+      svg path {
+        fill: $color__coastal--indigo-600;
+      }
+  
+    }
+  
+    &__bar {
+      width: 100%;
+      border: 1px solid $color__coastal--indigo-600;
+      height: 6px;
+  
+      span {
+        width: 50%;
+        display: block;
+        height: 6px;
+        background: $color__coastal--indigo-600;
+      }
+    }
+  
+    &__message {
+      margin: 1.5em 0 0.5em;
+      color: $color__coastal--indigo-600;
+      letter-spacing: 2px;
+      text-align: center;
+      padding: 0.5em 0;
+      font-family: $font-headings;
+      text-transform: uppercase;
+      font-size: 0.85em;
+    }
+  
+    &__disclaimer {
+      text-align: center;
+      color: $color__coastal--indigo-600;
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      padding: 2em;
+      line-height: 1.5;
+      margin: 0;
+    }
+  
+  }
+  

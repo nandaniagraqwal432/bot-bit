@@ -1,0 +1,120 @@
+// Components :: Nav
+
+.c-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1040;
+    display: none;
+  
+    @include breakpoint(lg) {
+      position: relative;
+      padding: 0 0 1.5em 0;
+      z-index: 400;
+      left: auto;
+      top: auto;
+    }
+  
+    @media print {
+      display: none;
+    }
+  
+    &__content {
+      background: _color(white);
+      border: 1px solid $color__coastal--indigo-600;
+      box-shadow: 0 8px 0 0 rgba(0,0,0,0.2);
+  
+      @include breakpoint(lg) {
+        margin: 15px;
+      }
+    }
+  }
+  
+  .c-nav-list {
+  
+    $nav-height: 47px;
+  
+    height: $nav-height;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+    &__logo {
+      font-size: 22px;
+      font-weight: 500;
+      height: $nav-height;
+      padding: 0 1em;
+      position: relative;
+      text-decoration: none;
+    }
+  
+    &__height {
+      height: 100%;
+    }
+  
+    &__item {
+      display: block;
+      text-align: center;
+  
+      &--inner {
+        height: 100%;
+        border-right: 1px solid $color__coastal--indigo-600;
+      }
+  
+      &--first {
+        border-left: 1px solid $color__coastal--indigo-600;
+      }
+  
+      &--game {
+        display: none;
+        @include breakpoint(lg) {
+          display: block;
+         }
+      }
+    }
+  
+    &__link {
+      background: transparent;
+      border: 2px solid transparent;
+      box-shadow: 4px 4px 0 0 transparent;
+      color: $color__coastal--indigo-600;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+      height: $nav-height;
+      padding: 0 0.75em;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+  
+      @include breakpoint(lg) {
+        padding: 0 1.5em;
+      }
+  
+      &:focus {
+        outline: 0;
+      }
+    }
+  
+    &__svg {
+      display: flex;
+  
+      svg path {
+        fill: $color__coastal--indigo-600;
+      }
+      &--logo {
+        display: block;
+        padding: 0 1em;
+      }
+    }
+  
+    &__clock {
+      color: $color__coastal--indigo-600;
+      font-family: $font-headings;
+      font-size: 15px;
+      letter-spacing: 4px;
+      padding: 0 2em;
+    }
+  }
+  

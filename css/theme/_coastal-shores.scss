@@ -1,0 +1,348 @@
+// Theme :: Coastal Shores
+
+// Light: Coastal Shores
+
+.s-home.th-coastal-shores {
+
+    $boxshadow__white--inset: inset 1px 1px 0 0 _color(white);
+    $boxshadow__white: 1px 1px 0 0 _color(white);
+    background: $color__coastal--indigo-500 url('../assets/pixels-dark.svg') top left;
+  
+    .c-nav {
+  
+      &__content {
+        background: $color__coastal--pink;
+        border-color: $color__coastal--indigo-600;
+        box-shadow: $boxshadow__white--inset, 0 8px 0 0 rgba(0,0,0,0.2);
+      }
+    }
+  
+    .c-nav-list {
+  
+      &__svg {
+  
+        svg path {
+          fill: $color__coastal--indigo-600;
+        }
+      }
+  
+      &__item {
+  
+        &--first {
+          border-left: 1px solid $color__coastal--indigo-600;
+        }
+  
+        &--inner {
+          border-right: 1px solid $color__coastal--indigo-600;
+          box-shadow: 1px 0 0 0 _color(white);
+        }
+      }
+  
+      &__clock {
+        color: $color__coastal--indigo-600;
+      }
+    }
+  
+    .c-viewer {
+      border-color: $color__coastal--indigo-600;
+  
+      &__content {
+        background: $color__coastal--pink;
+        box-shadow: inset 1px 0 0 0 _color(white);
+      }
+  
+      &__desc-text {
+        color: $color__coastal--indigo-600;
+      }
+  
+      &__address-bar {
+        background: $color__coastal--pink;
+        box-shadow: $boxshadow__white--inset;
+  
+        i {
+          background: $color__coastal--indigo-600;
+          box-shadow: $boxshadow__white;
+        }
+  
+        &:after, &:before {
+          background: $color__coastal--pink;
+          border-color: $color__coastal--indigo-600;
+          box-shadow: $boxshadow__white--inset;
+        }
+      }
+  
+      &__title {
+        color: $color__coastal--indigo-600;
+      }
+  
+      &__list-item {
+        border-color: $color__coastal--indigo-600;
+        color: $color__coastal--indigo-600;
+        box-shadow: $boxshadow__white--inset;
+  
+        &:last-child {
+          border-bottom-color: $color__coastal--indigo-600;
+        }
+  
+        span {
+          color: $color__coastal--indigo-600;
+        }
+      }
+  
+    }
+  
+    .c-card {
+  
+      background: _color(white);
+      box-shadow: 6px 6px 0 0 $color__coastal--pink;
+  
+      &:hover, &:active {
+        box-shadow: 6px 6px 0 0 $color__coastal--pink;
+      }
+  
+      &__wrapper {
+        background: url(../assets/pixels-light.svg) top left;
+      }
+  
+      &--green, &--red, &--blue, &--indigo, &--gold, &--pink {
+        border-color: $color__coastal--indigo-600;
+      }
+  
+      &__button {
+        border-color: $color__coastal--indigo-600;
+        background: $color__coastal--pink;
+        color: $color__coastal--indigo-600;
+        box-shadow: $boxshadow__white--inset, 2px 2px 0 0 rgba(0,0,0,0.05);
+      }
+  
+      dt {
+        color: $color__coastal--indigo-600;
+      }
+      dd {
+        color: $color__coastal--indigo-400;
+      }
+  
+      &__icon {
+  
+        svg path {
+          fill: $color__coastal--indigo-600;
+        }
+  
+        &:after {
+          bottom: -0.5em;
+          content: "";
+          height: 64px;
+          position: absolute;
+          right: -1em;
+          width: 64px;
+          z-index: 1;
+        }
+      }
+  
+      &--green {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-green;
+          }
+        }
+      }
+      &--red {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-purple;
+          }
+        }
+      }
+      &--blue {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-blue;
+          }
+        }
+      }
+      &--indigo {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-indigo;
+          }
+        }
+      }
+      &--gold {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-yellow;
+          }
+        }
+      }
+      &--pink {
+        .c-card__icon {
+          &:after {
+            border-radius: 100%;
+            background: $color__coastal--pastel-pink;
+          }
+        }
+      }
+  
+    }
+  
+    .c-flourish {
+      opacity: 0.06 !important;
+  
+      svg path {
+        stroke: $color__coastal--pink;
+      }
+    }
+  
+    .c-footer {
+      &__text {
+        background: none;
+      }
+    }
+  
+    .c-themer {
+      background: $color__coastal--pink;
+  
+      &__preview {
+        background: $color__coastal--indigo-500 url('../assets/pixels-dark.svg') top left;
+      }
+  
+      &__preview-inner {
+        background: $color__coastal--pink;
+      }
+  
+      &__white-noise {
+        background: url(../assets/pixels-light.svg) top left;
+      }
+  
+      &__blackboard {
+        background: _color(white);
+        border: 1px solid $color__coastal--indigo-600;
+        box-shadow: 3px 3px 0 0 rgba(0,0,0,0.2);
+      }
+  
+      &__icon {
+        svg path {
+          fill: $color__coastal--indigo-600;
+        }
+      }
+  
+      &__button {
+        background: $color__coastal--pink;
+        border: none;
+        box-shadow: inset -1px -1px 0 0 rgba(0,0,0,0.15), -1px -1px 0 0 _color(white);
+        color: $color__coastal--indigo-600;
+  
+        &--active {
+          background: darken($color__coastal--pink, 1.5%);
+          border: none;
+          box-shadow: 1px 1px 0 0 _color(white), inset 1px 1px 0 0 $color__coastal--indigo-600;
+        }
+  
+        &--close {
+          border: 1px solid $color__coastal--indigo-600;
+          box-shadow: inset 0 1px 0 0 _color(white), 3px 3px 0 0 rgba(0,0,0,0.1);
+        }
+      }
+    }
+  
+    .c-btn {
+      background: $color__coastal--pink;
+      border: 1px dotted $color__coastal--indigo-600;
+      color: $color__coastal--indigo-600;
+      border: 1px solid $color__coastal--indigo-600;
+      box-shadow: inset 0 1px 0 0 _color(white), 3px 3px 0 0 rgba(0,0,0,0.1);
+    }
+  
+    .c-forward {
+      &__subject {
+        background: $color__coastal--pink;
+        border-bottom: 1px solid $color__coastal--indigo-600;
+        border-top: 1px solid $color__coastal--indigo-600;
+        color: $color__coastal--indigo-600;
+      }
+  
+      &__message {
+        background: _color(white);
+      }
+  
+      &__message-list-item {
+        color: $color__coastal--indigo-600;
+      }
+  
+      &__button {
+        background: $color__coastal--pink;
+        border: 1px solid $color__coastal--indigo-600;
+        color: $color__coastal--indigo-600;
+        box-shadow: 2px 2px 0 0 rgba(0,0,0,0.2);
+      }
+    }
+  
+    .c-loader {
+      background: $color__coastal--pink;
+  
+      &__boot {
+        background: _color(white);
+        border: 1px solid $color__coastal--indigo-600;
+  
+        svg path {
+          fill: $color__coastal--indigo-600;
+        }
+      }
+  
+      &__bar {
+        border: 1px solid $color__coastal--indigo-600;
+  
+        span {
+          background: $color__coastal--indigo-600;
+        }
+      }
+  
+      &__message {
+        color: $color__coastal--indigo-600;
+      }
+  
+      &__disclaimer {
+        color: $color__coastal--indigo-600;
+      }
+    }
+  
+    .c-pong {
+      background: $color__coastal--pink;
+    }
+  
+    .c-music {
+      background: $color__coastal--pink;
+  
+      &__visualizer {
+        background: $color__coastal--indigo-500 url('../assets/pixels-dark.svg') top left;
+      }
+  
+      &__bar {
+        background: $color__coastal--pink;
+      }
+    }
+  
+    .c-radio {
+  
+      &__title {
+        color: $color__coastal--indigo-600;
+      }
+      &__text {
+        color: $color__coastal--indigo-600;
+      }
+  
+      .c-btn {
+        &:active {
+          background: darken($color__coastal--pink, 1.5%);
+        }
+      }
+  
+    }
+  
+  }
+  
